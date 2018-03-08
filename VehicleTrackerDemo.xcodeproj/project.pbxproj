@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A7BF64420517311004BE7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7BF64320517311004BE7A7 /* Main.storyboard */; };
 		C920311E1E53F2EB004821D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920311D1E53F2EB004821D1 /* AppDelegate.swift */; };
-		C92031201E53F2EB004821D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920311F1E53F2EB004821D1 /* ViewController.swift */; };
-		C92031231E53F2EB004821D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92031211E53F2EB004821D1 /* Main.storyboard */; };
+		C92031201E53F2EB004821D1 /* VehicleTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920311F1E53F2EB004821D1 /* VehicleTrackerViewController.swift */; };
 		C92031251E53F2EB004821D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92031241E53F2EB004821D1 /* Assets.xcassets */; };
-		C92031281E53F2EB004821D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92031261E53F2EB004821D1 /* LaunchScreen.storyboard */; };
+		C92031301E53F964004821D1 /* VTLib in Resources */ = {isa = PBXBuildFile; fileRef = C920312F1E53F964004821D1 /* VTLib */; };
+		C9482B4E1E824D6E0075CFCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9482B4D1E824D6E0075CFCF /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A7BF64320517311004BE7A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../Desktop/Main.storyboard; sourceTree = "<group>"; };
 		C920311A1E53F2EB004821D1 /* VehicleTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C920311D1E53F2EB004821D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C920311F1E53F2EB004821D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C92031221E53F2EB004821D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C920311F1E53F2EB004821D1 /* VehicleTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTrackerViewController.swift; sourceTree = "<group>"; };
 		C92031241E53F2EB004821D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C92031271E53F2EB004821D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92031291E53F2EB004821D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C920312F1E53F964004821D1 /* VTLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VTLib; sourceTree = "<group>"; };
+		C9482B4D1E824D6E0075CFCF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +56,12 @@
 		C920311C1E53F2EB004821D1 /* VehicleTrackerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C920312F1E53F964004821D1 /* VTLib */,
 				C920311D1E53F2EB004821D1 /* AppDelegate.swift */,
-				C920311F1E53F2EB004821D1 /* ViewController.swift */,
-				C92031211E53F2EB004821D1 /* Main.storyboard */,
+				C920311F1E53F2EB004821D1 /* VehicleTrackerViewController.swift */,
+				C9482B4D1E824D6E0075CFCF /* LoginViewController.swift */,
+				7A7BF64320517311004BE7A7 /* Main.storyboard */,
 				C92031241E53F2EB004821D1 /* Assets.xcassets */,
-				C92031261E53F2EB004821D1 /* LaunchScreen.storyboard */,
 				C92031291E53F2EB004821D1 /* Info.plist */,
 			);
 			path = VehicleTrackerDemo;
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					C92031191E53F2EB004821D1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5XSV84GD2L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +127,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92031281E53F2EB004821D1 /* LaunchScreen.storyboard in Resources */,
+				7A7BF64420517311004BE7A7 /* Main.storyboard in Resources */,
 				C92031251E53F2EB004821D1 /* Assets.xcassets in Resources */,
-				C92031231E53F2EB004821D1 /* Main.storyboard in Resources */,
+				C92031301E53F964004821D1 /* VTLib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +140,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92031201E53F2EB004821D1 /* ViewController.swift in Sources */,
+				C9482B4E1E824D6E0075CFCF /* LoginViewController.swift in Sources */,
+				C92031201E53F2EB004821D1 /* VehicleTrackerViewController.swift in Sources */,
 				C920311E1E53F2EB004821D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C92031211E53F2EB004821D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C92031221E53F2EB004821D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C92031261E53F2EB004821D1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C92031271E53F2EB004821D1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C920312A1E53F2EB004821D1 /* Debug */ = {
@@ -260,11 +246,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5XSV84GD2L;
 				INFOPLIST_FILE = VehicleTrackerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.drivool.vtdemo.VehicleTrackerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drivool.vtdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -272,11 +261,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5XSV84GD2L;
 				INFOPLIST_FILE = VehicleTrackerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.drivool.vtdemo.VehicleTrackerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.drivool.vtdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -299,6 +291,7 @@
 				C920312E1E53F2EB004821D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
