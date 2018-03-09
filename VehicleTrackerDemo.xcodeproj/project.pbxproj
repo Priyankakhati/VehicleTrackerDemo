@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A7BF64420517311004BE7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7BF64320517311004BE7A7 /* Main.storyboard */; };
+		7A7BF6462051C237004BE7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7BF6452051C237004BE7A7 /* Main.storyboard */; };
+		7A7BF64E2051D265004BE7A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A7BF64D2051D265004BE7A7 /* GoogleService-Info.plist */; };
+		B316708AAC2C21A211EBA5B2 /* Pods_VehicleTrackerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DE30163F5D728EBAF0EC0 /* Pods_VehicleTrackerDemo.framework */; };
 		C920311E1E53F2EB004821D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920311D1E53F2EB004821D1 /* AppDelegate.swift */; };
 		C92031201E53F2EB004821D1 /* VehicleTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C920311F1E53F2EB004821D1 /* VehicleTrackerViewController.swift */; };
 		C92031251E53F2EB004821D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92031241E53F2EB004821D1 /* Assets.xcassets */; };
@@ -16,7 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7A7BF64320517311004BE7A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../Desktop/Main.storyboard; sourceTree = "<group>"; };
+		14C29DE3B8078631B9F5CA50 /* Pods-VehicleTrackerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleTrackerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleTrackerDemo/Pods-VehicleTrackerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		577DE30163F5D728EBAF0EC0 /* Pods_VehicleTrackerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleTrackerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F404A7DEBBC7203316673A6 /* Pods-VehicleTrackerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleTrackerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleTrackerDemo/Pods-VehicleTrackerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7A7BF6452051C237004BE7A7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../Downloads/Main.storyboard; sourceTree = "<group>"; };
+		7A7BF6472051C2B3004BE7A7 /* VehicleTrackerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VehicleTrackerDemo.entitlements; sourceTree = "<group>"; };
+		7A7BF64D2051D265004BE7A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C920311A1E53F2EB004821D1 /* VehicleTrackerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleTrackerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C920311D1E53F2EB004821D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C920311F1E53F2EB004821D1 /* VehicleTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTrackerViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B316708AAC2C21A211EBA5B2 /* Pods_VehicleTrackerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343631E1199CE52452EEA2E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14C29DE3B8078631B9F5CA50 /* Pods-VehicleTrackerDemo.debug.xcconfig */,
+				5F404A7DEBBC7203316673A6 /* Pods-VehicleTrackerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C92031111E53F2EB004821D1 = {
 			isa = PBXGroup;
 			children = (
 				C920311C1E53F2EB004821D1 /* VehicleTrackerDemo */,
 				C920311B1E53F2EB004821D1 /* Products */,
+				343631E1199CE52452EEA2E5 /* Pods */,
+				E6BB062019EE8136B3C2E733 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,25 @@
 		C920311C1E53F2EB004821D1 /* VehicleTrackerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C920312F1E53F964004821D1 /* VTLib */,
+				C92031291E53F2EB004821D1 /* Info.plist */,
+				7A7BF64D2051D265004BE7A7 /* GoogleService-Info.plist */,
+				7A7BF6472051C2B3004BE7A7 /* VehicleTrackerDemo.entitlements */,
 				C920311D1E53F2EB004821D1 /* AppDelegate.swift */,
 				C920311F1E53F2EB004821D1 /* VehicleTrackerViewController.swift */,
 				C9482B4D1E824D6E0075CFCF /* LoginViewController.swift */,
-				7A7BF64320517311004BE7A7 /* Main.storyboard */,
+				7A7BF6452051C237004BE7A7 /* Main.storyboard */,
 				C92031241E53F2EB004821D1 /* Assets.xcassets */,
-				C92031291E53F2EB004821D1 /* Info.plist */,
+				C920312F1E53F964004821D1 /* VTLib */,
 			);
 			path = VehicleTrackerDemo;
+			sourceTree = "<group>";
+		};
+		E6BB062019EE8136B3C2E733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				577DE30163F5D728EBAF0EC0 /* Pods_VehicleTrackerDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C920312C1E53F2EB004821D1 /* Build configuration list for PBXNativeTarget "VehicleTrackerDemo" */;
 			buildPhases = (
+				64330387DBBE880E6780159D /* [CP] Check Pods Manifest.lock */,
 				C92031161E53F2EB004821D1 /* Sources */,
 				C92031171E53F2EB004821D1 /* Frameworks */,
 				C92031181E53F2EB004821D1 /* Resources */,
+				551EFAAB2BD50F41A7EF86B0 /* [CP] Embed Pods Frameworks */,
+				E4EE6AF6BE415F111DBBDDA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -94,13 +126,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Drivool;
 				TargetAttributes = {
 					C92031191E53F2EB004821D1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5XSV84GD2L;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -127,13 +165,117 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7BF64420517311004BE7A7 /* Main.storyboard in Resources */,
 				C92031251E53F2EB004821D1 /* Assets.xcassets in Resources */,
+				7A7BF64E2051D265004BE7A7 /* GoogleService-Info.plist in Resources */,
 				C92031301E53F964004821D1 /* VTLib in Resources */,
+				7A7BF6462051C237004BE7A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		551EFAAB2BD50F41A7EF86B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VehicleTrackerDemo/Pods-VehicleTrackerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleTrackerDemo/Pods-VehicleTrackerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64330387DBBE880E6780159D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VehicleTrackerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4EE6AF6BE415F111DBBDDA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VehicleTrackerDemo/Pods-VehicleTrackerDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleTrackerDemo/Pods-VehicleTrackerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C92031161E53F2EB004821D1 /* Sources */ = {
@@ -158,7 +300,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -166,7 +310,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -208,7 +356,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -216,7 +366,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -244,30 +398,36 @@
 		};
 		C920312D1E53F2EB004821D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C29DE3B8078631B9F5CA50 /* Pods-VehicleTrackerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VehicleTrackerDemo/VehicleTrackerDemo.entitlements;
 				DEVELOPMENT_TEAM = 5XSV84GD2L;
 				INFOPLIST_FILE = VehicleTrackerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drivool.vtdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C920312E1E53F2EB004821D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F404A7DEBBC7203316673A6 /* Pods-VehicleTrackerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VehicleTrackerDemo/VehicleTrackerDemo.entitlements;
 				DEVELOPMENT_TEAM = 5XSV84GD2L;
 				INFOPLIST_FILE = VehicleTrackerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drivool.vtdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

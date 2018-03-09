@@ -7,15 +7,35 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuthUI
+import FirebasePhoneAuthUI
+import FirebaseGoogleAuthUI
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, FUIAuthDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        let authUI = FUIAuth.defaultAuthUI()
+        // You need to adopt a FUIAuthDelegate protocol to receive callback
+        authUI?.delegate = self
+        let user = UserDefaults.standard.string(forKey: "user")
+        if user == nil {
+            let providers: [FUIAuthProvider] = [
+                         FUIGoogleAuth(),
+                //          FUIFacebookAuth(),
+                //          FUITwitterAuth(),
+                FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()!),
+                ]
+            authUI?.providers = providers
+            let authViewController = authUI?.authViewController()
+            self.window?.rootViewController = authViewController
+        }
         return true
     }
 
@@ -41,6 +61,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        // other URL handling goes here.
+        return false
+    }
+    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+        // handle user and error as necessary
+        if let error = error as NSError? {
+            NSLog("Authorization error: %@ ", error.userInfo)
+        }else{
+        UserDefaults.standard.set(String(describing: user), forKey: "user")
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+   //     let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+    //    self.window?.rootViewController = initialViewController
+        self.window?.rootViewController = storyboard.instantiateInitialViewController()
+        self.window?.makeKeyAndVisible()
+        }
+    }
 }
 
